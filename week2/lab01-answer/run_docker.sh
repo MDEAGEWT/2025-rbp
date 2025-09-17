@@ -6,4 +6,4 @@ docker run -it --privileged \
     --env=LOCAL_USER_ID="$(id -u)" \
     --hostname $(hostname) \
     --network host \
-    --name rbp mdeagewt/2025-rbp:lab01 bash
+    --name rbp mdeagewt/2025-rbp:lab01-answer bash
