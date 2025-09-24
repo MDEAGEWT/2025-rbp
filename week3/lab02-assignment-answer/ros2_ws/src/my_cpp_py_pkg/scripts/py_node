@@ -1,0 +1,14 @@
+#!/usr/bin/env python3
+
+import rclpy
+from rclpy.node import Node
+import my_cpp_py_pkg.module_to_import as module_to_import
+
+def main(args=None):
+    rclpy.init(args=args)
+    node = Node('py_node')
+    node.get_logger().info(module_to_import.hello_from_python_module())
+    rclpy.shutdown()
+
+if __name__ == '__main__':
+    main()
